@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const Post = require('./models/post');
-
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -15,23 +13,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  Post.find({}).then(posts => {
-    res.render('index', { posts });
-  })
-});
-
-app.get('/create', (req, res) => {
-  res.render('create');
-});
-app.post('/create', (req, res) => {
-  const {title, body} = req.body; 
-
-  Post.create({
-  title: title,
-  body: body
-}).then(post => console.log(post.id));
-
-  res.redirect('/');
+  res.render('index');
 });
 
 module.exports = app;
