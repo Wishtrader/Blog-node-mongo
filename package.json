@@ -1,0 +1,27 @@
+{
+  "name": "node_blog",
+  "version": "1.0.0",
+  "description": "Blog on node.js",
+  "main": "index.js",
+  "author": "Wishtrader <mr.akomarov@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env PORT=3001 node index.js",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.5",
+    "eslint": "^7.17.0",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11"
+  }
+}
