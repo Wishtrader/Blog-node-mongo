@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Node Blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <form method="post">
-      <input type="text" name="title" value="">
-      <textarea name="body" rows="10" cols="30"></textarea>
-      <button type="submit">SUBMIT</button>
-    </form>
-  </body>
-</html>
+<%- include('layout/header.ejs') %>
+
+<form method="post">
+  <input type="text" name="title" value="">
+  <textarea name="body" rows="10" cols="30"></textarea>
+  <button type="submit">SUBMIT</button>
+</form>
+
+<%- include('layout/header.ejs') %>
